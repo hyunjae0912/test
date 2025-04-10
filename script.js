@@ -1,4 +1,4 @@
-let bookId = 1; // 전역 변수로 책 번호 초기화
+let bookId = 1; // 책 번호
 
 // 책 등록
 function registerBook() {
@@ -34,7 +34,7 @@ function registerBook() {
                 alert('같은 카테고리 안에 동일한 책이 중복되어 있습니다.');
                 return;
         }
-        console.log('테스트');
+        //console.log('테스트');
     }
 
     // row에 들어갈 데이터 넣기
@@ -50,6 +50,7 @@ function registerBook() {
 
     // 이벤트 리스너로 지우기 추가
     removeBtn.addEventListener("click", () => {
+        // 몇 번째 줄에 위치하는지 인덱스 반환
         const rowIndexInTbody = newRow.sectionRowIndex;
         tbody.deleteRow(rowIndexInTbody);
     });
