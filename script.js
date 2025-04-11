@@ -104,7 +104,6 @@ function searchName(){
     const regex = new RegExp(keyWord.value.trim());
 
     arr.filter((value) => {
-        
         console.log(value.cells[2].innerText);
         return regex.test(value.cells[2].innerText);
     });
